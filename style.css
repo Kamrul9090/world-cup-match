@@ -9,8 +9,6 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -19,31 +17,38 @@ body {
 
 /* Banner section style */
 
-.container-wrap {
-    width: 1200px;
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
     margin: auto;
+
 }
 
 .top-banner {
-    width: 100%;
-    height: 100%;
     background-color: #161616;
-    border-radius: 10px;
-    margin-bottom: 130px;
     display: flex;
+    margin-bottom: 120px;
+    border-radius: 10px;
+    /* align-items: center; */
+    /* text-align: center; */
 }
 
 .banner-article {
     width: 50%;
+    display: flex;
+    flex-direction: column;
     padding: 50px;
 }
 
 .banner-img {
     width: 50%;
+
 }
 
 .banner-img img {
     width: 100%;
+    padding-top: 50px;
 }
 
 .banner-article h1 {
@@ -164,8 +169,11 @@ aside:hover .btn {
 
 /* card section style */
 .head-section {
+    width: 90%;
+    margin: auto;
     margin-bottom: 130px;
     display: flex;
+
 }
 
 .cards {
@@ -251,8 +259,9 @@ aside:hover .btn {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 1px 1px 3px rgb(136, 134, 134);
+    box-shadow: 2px 1px 4px rgb(181, 81, 81);
     border-radius: 5px;
+    background-color: rgb(242, 227, 227);
 }
 
 .country {

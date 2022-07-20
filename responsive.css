@@ -1,23 +1,42 @@
 @media only screen and (max-width:576px) {
-    .container-wrap {
+
+    .container {
         width: fit-content;
     }
 
     .top-banner {
         flex-direction: column;
-        text-align: center;
     }
 
     .banner-article {
-        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .banner-article h1 {
+        font-size: 30px;
+    }
+
+    .banner-article p {
+        margin-bottom: 30px;
+    }
+
+
+    .banner-img {
+        width: 100%;
     }
 
     .banner-img img {
+        padding: 0px;
         width: 90%;
     }
 
     .head-section {
         flex-direction: column;
+        margin-left: 0;
 
     }
 
@@ -41,6 +60,18 @@
         width: 440px;
         height: 500px;
 
+    }
+
+    /* upcoming match */
+    #upcoming-match {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 20px;
+        padding-left: 10px;
+    }
+
+    .match-time {
+        width: 400px;
+        height: 250px;
     }
 
     footer {
