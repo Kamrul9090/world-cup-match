@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/ea7b9a9559.js" crossorigin="anonymous"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -21,8 +22,11 @@
                 <p>“The Greatest Show on Earth” is a rather vague description. More to the point, it invites personal
                     opinions. I enjoy watching both, and for different reasons, but if I had to chose between one or the
                     other, I’d watch the World Cup.</p>
-                <button>Watch Live <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="watch-btn">Watch Live <i class="fa-solid fa-arrow-right"></i></button>
             </article>
+            <div class="banner-img">
+                <img src="assets/Banner Image.png" alt="">
+            </div>
         </section>
         <!-- banner section end -->
 
@@ -30,13 +34,12 @@
         <section class="head-section">
             <aside>
                 <div class="buttons">
-                    <button class="btn">Upcoming Match</button><br>
+                    <button class="btn"><a href="./match.html#upcoming-match">Upcoming Match</a></button><br>
                     <hr class="line">
-                    <button class="btn">All Group</button><br>
+                    <button class="btn"><a href="">All Group</a></button><br>
                     <hr class="line">
-                    <button class="btn">Blog</button><br>
+                    <button class="btn"><a href="">Blog</a></button><br>
                     <hr class="line">
-
                 </div>
             </aside>
             <!-- card section -->
@@ -171,6 +174,9 @@
         <!-- match section end -->
     </main>
     <!-- footer section -->
+    <div id="spacial-btn">
+        <button class="tab-btn">View All</button>
+    </div>
     <footer>
         <h1>Goal</h1>
         <hr>
@@ -184,7 +190,12 @@
                 <li><a href="#">Goal Live</a></li>
             </ul>
         </div>
-
+        <div class="footer-icons">
+            <a target="_blank" href="https://www.instagram.com/cr7kamrul/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://twitter.com/home"><i class="fa-brands fa-twitter-square"></i></a>
+            <a target="_blank" href="https://www.facebook.com/CR7.Kamrul"><i
+                    class="fa-brands fa-facebook-square"></i></a>
+        </div>
     </footer>
 </body>
 

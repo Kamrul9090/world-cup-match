@@ -26,19 +26,24 @@ body {
 
 .top-banner {
     width: 100%;
-    height: 613px;
-    background-image: url(assets/Banner\ Image.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+    height: 100%;
     background-color: #161616;
     border-radius: 10px;
     margin-bottom: 130px;
+    display: flex;
 }
 
 .banner-article {
     width: 50%;
     padding: 50px;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
 }
 
 .banner-article h1 {
@@ -58,11 +63,46 @@ body {
 .banner-article button {
     width: 150px;
     height: 50px;
-    background: #DD0000;
+    background-color: #DD0000;
     border-radius: 5px;
     border: none;
     color: #FFFFFF;
     font-weight: 700;
+}
+
+.watch-btn:hover {
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.watch-btn:hover {
+    transform: rotate(360deg);
+    transition: 1s linear;
+}
+
+@keyframes colorChange {
+    0% {
+        width: 150px;
+        height: 50px;
+        background-color: #DD0000;
+        border-radius: 5px;
+        border: none;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+
+    100% {
+        width: 200px;
+        height: 60px;
+        background-color: #06060e;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px rgb(98, 29, 4);
+    }
 }
 
 /* head section */
@@ -71,7 +111,8 @@ body {
 aside {
     width: 300px;
     height: 300px;
-    background-color: #161616;
+    background-color: rgb(231, 67, 8);
+    background-image: linear-gradient(to right, rgb(231, 67, 8), rgb(25, 18, 18));
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -83,12 +124,17 @@ aside {
     padding-top: 30px;
 }
 
+.buttons a {
+    text-decoration: none;
+    color: #161616;
+}
+
 .btn {
     width: 80%;
     height: 50px;
-    background-color: #FFFFFF;
     font-weight: 700;
     font-size: 18px;
+    background-color: #FFFFFF;
     border: none;
     margin-top: 10px;
     border-radius: 30px;
@@ -100,8 +146,11 @@ aside {
     width: 30px;
 }
 
-.btn:focus {
+.btn:hover {
     background-color: #DD0000;
+}
+
+.btn a:hover {
     color: #FFFFFF;
 }
 
@@ -125,6 +174,7 @@ aside:hover .btn {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+
 
 }
 
@@ -162,6 +212,25 @@ aside:hover .btn {
 
 .icons .watch-icon {
     margin-right: 30px;
+}
+
+/* tab btn */
+#spacial-btn {
+    display: none;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: rgb(128, 49, 20);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 /*---------------- 
@@ -212,9 +281,11 @@ footer h1 {
 }
 
 footer {
+    width: 100%;
+    height: 520px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -228,7 +299,9 @@ footer hr:hover {
 }
 
 .navbar ul {
+    /* height: 150px; */
     display: flex;
+
 }
 
 .navbar ul li {
@@ -239,6 +312,19 @@ footer hr:hover {
 }
 
 .navbar ul li a {
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.footer-icons {
+    font-size: 40px;
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+}
+
+.footer-icons a {
     text-decoration: none;
     color: #B9B9B9;
 }
