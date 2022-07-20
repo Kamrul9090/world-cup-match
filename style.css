@@ -192,7 +192,7 @@ aside:hover .btn {
     border-radius: 8px;
 }
 
-.card img {
+.card-img img {
     width: 100%;
 }
 
@@ -264,10 +264,14 @@ aside:hover .btn {
 }
 
 .country {
+    width: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
+
+.country img {}
 
 .vs {
     margin-right: 10px;
@@ -307,9 +311,7 @@ footer hr:hover {
 }
 
 .navbar ul {
-    /* height: 150px; */
     display: flex;
-
 }
 
 .navbar ul li {
