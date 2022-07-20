@@ -67,7 +67,7 @@ body {
 .banner-article button {
     width: 150px;
     height: 50px;
-    background-color: #DD0000;
+    background-color: #a79a21;
     border-radius: 5px;
     border: none;
     color: #FFFFFF;
@@ -115,8 +115,6 @@ body {
 aside {
     width: 300px;
     height: 300px;
-    background-color: rgb(231, 67, 8);
-    background-image: linear-gradient(to right, rgb(231, 67, 8), rgb(25, 18, 18));
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -151,15 +149,20 @@ aside {
 }
 
 .btn:hover {
-    background-color: #DD0000;
+    background-color: #150707;
+    color: #B9B9B9;
 }
 
-.btn a:hover {
+.btn:hover a {
     color: #FFFFFF;
 }
 
 aside:hover .line {
     display: block;
+}
+
+aside:hover {
+    border: 2px solid rgb(122, 33, 0);
 }
 
 aside:hover .btn {
@@ -271,8 +274,6 @@ aside:hover .btn {
     margin-bottom: 20px;
 }
 
-.country img {}
-
 .vs {
     margin-right: 10px;
     margin-left: 10px;
@@ -283,7 +284,6 @@ aside:hover .btn {
 footer {
     height: 300px;
     background-color: #161616;
-
 }
 
 footer h1 {
