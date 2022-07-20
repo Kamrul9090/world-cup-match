@@ -261,9 +261,9 @@ aside:hover .btn {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 2px 1px 4px rgb(181, 81, 81);
+    box-shadow: 2px 1px 4px rgb(238, 238, 242);
     border-radius: 5px;
-    background-color: rgb(242, 227, 227);
+    background-color: rgb(246, 242, 242);
 }
 
 .country {
